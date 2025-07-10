@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Business Risk Scanner</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <h1>Business Risk Assessment</h1>
+  <form id="riskForm">
+    <input id="revenue" type="number" placeholder="Revenue" required>
+    <input id="debtToEquity" type="number" placeholder="Debt-to-Equity" required>
+    <input id="cashFlow" type="number" placeholder="Cash Flow" required>
+    <input id="creditScore" type="number" placeholder="Credit Score" required>
+    <input id="yearsActive" type="number" placeholder="Years Active" required>
+    <input id="employees" type="number" placeholder="Employees" required>
+    <button type="submit">Assess Risk</button>
+  </form>
+
+  <h2 id="riskOutput"></h2>
+</body>
+</html>
